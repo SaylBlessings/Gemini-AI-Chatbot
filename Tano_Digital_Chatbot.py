@@ -14,7 +14,7 @@ class Chatbot:
     def __init__(self):
         self.info_responses = {
             "about": "Digital Solutions is a leading technology company based in Zimbabwe. We specialize in providing innovative solutions in software development, web development, and IT consulting services.",
-            "services": "At Tano Digital Solutions, we offer a wide range of services including software development, web development, mobile app development, digital marketing, and IT consulting.",
+            "services": "At Digital Solutions, we offer a wide range of services including software development, web development, mobile app development, digital marketing, and IT consulting.",
             "contact": "You can reach us at Tano Digital Solutions via email at info@digital.co.zw or by phone at +263 123 456 799. Our office is located at 123 Main Street, Harare, Zimbabwe."
         }
          
