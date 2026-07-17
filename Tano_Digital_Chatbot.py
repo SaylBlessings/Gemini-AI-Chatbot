@@ -9,18 +9,18 @@ app = Flask(__name__)
 
 class Chatbot:
     """WhatsApp Chatbot for Tano Digital Solutions Company Information"""
-    CHATBOT_NAME = "Tano Digital Solutions Chatbot"
+    CHATBOT_NAME = "Digital Solutions Chatbot"
     
     def __init__(self):
         self.info_responses = {
-            "about": "Tano Digital Solutions is a leading technology company based in Zimbabwe. We specialize in providing innovative solutions in software development, web development, and IT consulting services.",
+            "about": "Digital Solutions is a leading technology company based in Zimbabwe. We specialize in providing innovative solutions in software development, web development, and IT consulting services.",
             "services": "At Tano Digital Solutions, we offer a wide range of services including software development, web development, mobile app development, digital marketing, and IT consulting.",
-            "contact": "You can reach us at Tano Digital Solutions via email at info@tanodigital.co.zw or by phone at +263 123 456 789. Our office is located at 123 Main Street, Harare, Zimbabwe."
+            "contact": "You can reach us at Tano Digital Solutions via email at info@digital.co.zw or by phone at +263 123 456 799. Our office is located at 123 Main Street, Harare, Zimbabwe."
         }
          
-        self.gen_ai = genai.configure(api_key="AIzaSyAQc54eHT-3cms9WgB8cM4N1d6j3lhvPDg")
+        self.gen_ai = genai.configure(api_key="")
         # Initialize Twilio client
-        self.twilio_client = Client("AC3c625c0fd94f88258708dcb626e3cf41 ", "c5aa6c81ba92e0daad34a6d36cf1165a ")
+        self.twilio_client = Client("AC3c625c0fd94f88258708dcb62cf41 ", "c5aa6c92e0da34a6d36cf1165a ")
     
     def get_info_response(self, query):
         """Get company information based on user query"""
