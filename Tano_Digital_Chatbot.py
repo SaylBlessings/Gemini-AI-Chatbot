@@ -8,19 +8,19 @@ from twilio.rest import Client
 app = Flask(__name__)
 
 class Chatbot:
-    """WhatsApp Chatbot for Tano Digital Solutions Company Information"""
+    """WhatsApp Chatbot for Digital Solutions Company Information"""
     CHATBOT_NAME = "Digital Solutions Chatbot"
     
     def __init__(self):
         self.info_responses = {
             "about": "Digital Solutions is a leading technology company based in Zimbabwe. We specialize in providing innovative solutions in software development, web development, and IT consulting services.",
             "services": "At Digital Solutions, we offer a wide range of services including software development, web development, mobile app development, digital marketing, and IT consulting.",
-            "contact": "You can reach us at Tano Digital Solutions via email at info@digital.co.zw or by phone at +263 123 456 799. Our office is located at 123 Main Street, Harare, Zimbabwe."
+            "contact": "You can reach us at  Digital Solutions via email at info@digital.co.zw or by phone at +263 123 456 799. Our office is located at 123 Main Street."
         }
          
         self.gen_ai = genai.configure(api_key="")
         # Initialize Twilio client
-        self.twilio_client = Client("AC3c625c0fd94f88258708dcb62cf41 ", "c5aa6c92e0da34a6d36cf1165a ")
+        self.twilio_client = Client("AC3c625c0fd94f88258708dcb62c ", "c5aa6c92e0da34a6d3665a ")
     
     def get_info_response(self, query):
         """Get company information based on user query"""
@@ -40,7 +40,7 @@ chatbot = Chatbot()
 @app.route('/webhook', methods=['POST'])
 def webhook():
     """
-    Handle incoming messages and provide Tano Digital Solutions company information.
+    Handle incoming messages and provide Digital Solutions company information.
     """
     incoming_msg = request.values.get('Body', '').lower()
 
